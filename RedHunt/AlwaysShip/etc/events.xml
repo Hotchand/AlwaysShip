@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © RedHunt All rights reserved.
+ * See COPYING.txt for license details.
+ * contact: hotchand.sajnani@gmail.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_shipment_save_before">
+      <observer name="orderAlwaysShip" instance="RedHunt\AlwaysShip\Observer\AlwaysShipOrder" /> 
+   </event>    
+</config>
